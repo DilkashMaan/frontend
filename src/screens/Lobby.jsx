@@ -20,6 +20,7 @@ const LobbyScreen = () => {
   const handleJoinRoom = useCallback(
     (data) => {
       const { email, room } = data;
+      console.log("nextpage");
       navigate(`/room/${room}`);
     },
     [navigate]
